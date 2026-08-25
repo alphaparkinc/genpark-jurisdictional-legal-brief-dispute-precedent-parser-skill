@@ -1,0 +1,38 @@
+{
+  "name": "genpark-jurisdictional-legal-brief-dispute-precedent-parser-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Jurisdictional legal brief compiler, European court precedent case-law retriever, and litigation pleading draft generator.",
+  "author": "genpark",
+  "category": "legal-disputes",
+  "tags": [
+    "legal-brief",
+    "case-law-search",
+    "litigation-drafting",
+    "european-court-law",
+    "legora-leya"
+  ],
+  "inputs": {
+    "case_matter_title": {
+      "type": "string"
+    },
+    "applicable_eu_directives": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "brief_id": {
+      "type": "string"
+    },
+    "cited_court_precedents_count": {
+      "type": "integer"
+    },
+    "litigation_success_probability_pct": {
+      "type": "number"
+    },
+    "court_filing_pleading_draft_ready": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
